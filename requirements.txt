@@ -1,0 +1,30 @@
+# Core web server & routing
+fastapi
+uvicorn[standard]
+
+# OpenAI GPT API
+openai
+
+# Environment variable management
+python-dotenv
+
+# (Optional) For logging/debugging
+httpx
+requests
+
+# === Future additions (commented out for now) ===
+
+# Whisper (Speech-to-text)
+# git+https://github.com/openai/whisper.git
+
+# Torch (required by Whisper & Resemblyzer)
+# torch
+
+# Speaker recognition
+# resemblyzer
+
+# Text-to-Speech options
+# pyttsx3
+# TTS (by coqui.ai)
+# TTS
+
