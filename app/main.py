@@ -1,6 +1,8 @@
 # Smart Home Assistant - Starter Scaffold
 
 # --- Imports ---
+from dotenv import load_dotenv
+import os
 from fastapi import FastAPI, Request
 import openai
 import uvicorn
@@ -9,10 +11,12 @@ import uvicorn
 # import whisper
 # import pyttsx3
 
+load_dotenv()
+
 # User voice recognition setup would go here (e.g., Resemblyzer)
 
 # --- Configuration ---
-openai.api_key = "your-openai-api-key"
+openai.api_key = os.getenv("OPENAI_API_KEY")
 app = FastAPI()
 
 # Placeholder: per-user memory (in-memory, replace with SQLite/Redis)
