@@ -24,9 +24,9 @@ Build a **modular, voice-activated home assistant** that:
 | Voice Input                     | Capture speech via mic (manual → always-on) |
 | Speech-to-Text (STT)            | Convert audio to text |
 | User Identification             | Match voice to user identity |
-| GPT Assistant Logic             | Use OpenAI to:  
-                                  - Interpret smart commands  
-                                  - Respond to general questions |
+| GPT Assistant Logic             | Use OpenAI to:  |
+|                                 |- Interpret smart commands  |
+|                                 |- Respond to general questions |
 | Smart Device Control            | Home Assistant + REST API |
 | Text-to-Speech (TTS)            | Speak responses |
 | Wake Word Listening             | Always-on passive mode via Porcupine |
@@ -54,15 +54,18 @@ Build a **modular, voice-activated home assistant** that:
 ## 🌐 4. Function Modes
 
 ### A. Smart Device Control Mode
+
 - "Turn off the hallway light."
 - "Dim the living room lamp to 30%."
 
 ### B. Conversational / Q&A Mode
+
 - "What’s the weather like today?"
 - "What’s the capital of Iceland?"
 - "Tell me a joke."
 
 **GPT Routing Logic** auto-detects intent using structured prompts and optionally tags outputs:
+
 ```json
 {
   "intent": "device_control",
@@ -82,7 +85,7 @@ Build a **modular, voice-activated home assistant** that:
 | Speaker Output | 3.5mm or Bluetooth speaker | $0–50 | For TTS output |
 | Wake Word Hardware | Same as mic input | $0 | Works with Porcupine |
 | Smart Devices | Use existing bulbs/switches | $0 | Expand later |
-| Optional: Raspberry Pi 4 | $60–80 | For future compact deployment |
+| Optional: Raspberry Pi 4 | $60–80 | For future compact deployment ||
 
 ---
 
@@ -103,7 +106,7 @@ Build a **modular, voice-activated home assistant** that:
 
 ## 📏 7. Architecture Overview
 
-```
+```text
 [Mic Input] 
   ↓
 [STT: Whisper]
